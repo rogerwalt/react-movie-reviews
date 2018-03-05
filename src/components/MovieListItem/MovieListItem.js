@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 import { POSTER_BASE_URL } from '../../config/constants';
 
