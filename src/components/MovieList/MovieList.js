@@ -1,15 +1,13 @@
 import React, { Component } from 'react';
-import * as _ from 'lodash';
 
 class MovieList extends Component {
   render() {
     const items = this.props.movies.map((e) => {
-      return <span>{e.title}</span>;
+      return <div className="cell">{e.title}</div>;
     });
     return (
-      <div>
-        <div>MovieList</div>
-        <div>{items}</div>
+      <div className="grid-x grid-margin-x grid-margin-y small-up-2 medium-up-4">
+        {items}
       </div>
     );
   }
