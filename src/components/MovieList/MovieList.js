@@ -1,9 +1,16 @@
 import React, { Component } from 'react';
+import * as _ from 'lodash';
 
 class MovieList extends Component {
-  render () {
+  render() {
+    const items = this.props.movies.map((e) => {
+      return <span>{e.title}</span>;
+    });
     return (
-      <div>MovieList</div>
+      <div>
+        <div>MovieList</div>
+        <div>{items}</div>
+      </div>
     );
   }
 }
